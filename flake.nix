@@ -16,10 +16,10 @@
               nixpkgs.lib.getName pkg == "tmog";
           };
 
-          version = "0.1.4";
+          version = "1.0.0";
           src = pkgs.fetchurl {
             url = "https://tmog.org/downloads/TaskManagerOG-${version}-x86_64.AppImage";
-            hash = "sha256-qYczR+4rGkiVzyyPOWYNjPS4aribJMCNVB8jfjZbQ0Y=";
+            hash = "sha256-7jd6c5SfiQhju8+tCd02tgugR28Me8vQ0Os0NeKQKpY=";
           };
           appimageContents = pkgs.appimageTools.extract {
             pname = "tmog";
